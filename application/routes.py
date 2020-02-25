@@ -12,7 +12,7 @@ def login():
     return render_template('login.html', title ='Login')
 @app.route('/register')
 def register():
-    return render_template('register.html',title ='Registration')
+    return render_template('register.html',title ='Register')
 @app.route('/')
 @app.route('/home')
 def home():
