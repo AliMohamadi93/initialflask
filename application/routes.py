@@ -16,8 +16,8 @@ def register():
 @app.route('/')
 @app.route('/home')
 def home():
-    postData = Posts.query.first()
-    return render_template('home.html', title='Home', post=postData)
+    postData = Posts.query.all()
+    return render_template('home.html', title='Home', posts=postData)
 
 @app.route('/post', methods=['GET', 'POST'])
 def post():
